@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Emma is a Web Designer in Riyadh, Freelancer in Riyadh, Emma Portfolio">
+    <meta name="description" content="ايما :مصممة مواقع في الرياض،مستقلة، موقع اعمال و مشاريع ">
+    <meta name="og:title" property="og:title" content="Project3: Facebook Header Design| Emma W PORTFOLIO | Web Designer in Riyadh KSA">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3: Facebook Header Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="hero-wrapper">
+        <div class="wrapper">
+            <header>
+                
+                <div class="head-project">
+                <div class="logo-project"><a href="index.html" ><img class="logos" src="pic\exlogoo.png"  alt="Emma W logo"></a>
+                    <button id="en-btn">EN</button>
+                    <button id="ar-btn">AR</button>
+                </div>
+                  <div class="navdivpage">
+                   <a class="nav-project" href="index.html" data-translatable>HOME // الرئيسية</a>
+                   <a class="nav-project" href="index.html/" data-translatable>CONTACT // تواصل</a>
+                </div>
+                </div>
+            </header>
+                   <section class="project-page">
+                    <div class="green"><div class="blackbox"> <span class="numberproject">3</span></div></div>
+                        <div class="proj-image-fb">
+                            
+                            <img src="pic/FacebookCover2-projectpage3.png" alt="Facebook Header Design">
+                        </div>
+                        
+                        <div class="proj-text">
+                            <div class="lightgreen"></div>
+                            <p>
+                                <span data-translatable> This is a facebook header // هذا تصميم هيدر</span></br> <span data-translatable>banner design. It is designed // لصفحة فيسبوك . صمم </span></br><span data-translatable> for Account Page. // لصفحة الحساب الشخصي</span></br>
+                            </p>
+                            <h1 class="fg">
+                                FACEBOOK COVER
+                            </h1>
+                            
+
+                        </div>
+
+                   </section>
+                   <footer class="footer-container">
+                    <div class="contact-form">
+                        <form id="contact-form" method="post" action="contact-form-handler.php">
+                            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                            <br>
+                            <input name="email" type="email" class="form-control" placeholder="Your Email" required> 
+                            <br>
+                            <textarea type="text" name="message" class="form-control" placeholder="Your Message" cols="7" row="100" required>
+                            </textarea><br>
+                            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                
+                        </form>
+                    </div>
+                    
+                    <div class="copyright-text" > <span data-translatable>All Right Reserved // حقوق الطبع محفوظة</span>  <span class="date-2022" data-translatable >2022 // 1444 </span></div>
+                    </footer>
+                   <script src="dom-i18n.min.js"></script>
+                   <script>
+                 
+               
+                 var enButton = document.getElementById('en-btn');
+                     var frButton = document.getElementById('ar-btn');
+                     var i18n = domI18n({
+                       selector: '[data-translatable]',
+                       separator: ' // ',
+                       languages: ['en', 'ar'],
+                       defaultLanguage: 'en'
+                     });
+               
+                     enButton.onclick = function () {
+                       i18n.changeLanguage('en');
+                     };
+               
+                     frButton.onclick = function () {
+                       i18n.changeLanguage('ar');
+                     };
+               
+                   
+                   </script> 
+</body>
+</html>
